@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You 🌸</title>
+
+  <!-- ========== FONTS ========== -->
+  <!-- "Great Vibes" for headings, "Lora" for body readability -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== FLOATING HEARTS BACKGROUND ========== -->
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <!-- ========== FLORAL CORNER DECORATIONS ========== -->
+  <div class="floral floral--tl">🌸</div>
+  <div class="floral floral--tr">🌸</div>
+  <div class="floral floral--bl">🌸</div>
+  <div class="floral floral--br">🌸</div>
+
+  <!-- ========== MAIN WRAPPER ========== -->
+  <main class="wrapper">
+
+    <!-- ── HERO TITLE ── -->
+    <header class="hero fade-in">
+      <h1 class="hero__title">Just For You</h1>
+      <p class="hero__sub">a little something, from my heart 🌷</p>
+    </header>
+
+    <!-- ── MESSAGE CARD ── -->
+    <section class="card fade-in delay-1" aria-label="Love message">
+
+      <!-- Each <p> is a paragraph of the original message -->
+      <p>
+        Hi loveee 🫶🏻,<br />
+        I know that you're sad. I know that you wanna be with me forever.
+        I know that you wanna be with me all the time, but you can't because
+        of the responsibilities and the work you deal with. And that's totally
+        fine. I never said anything regarding that and I will never say anything
+        because I know how badly you wanna be with me, it's just that you can't. It's just that you're kind of busy. It's just that you can't do it
+        because you don't have a personal phone or personal space or free time
+        right now because you're dealing with a lot of stuff because you're
+        such a good person.
+      </p>
+
+      <p>
+        So you don't have to feel bad or cry about it, okay? I'm always here
+        for you. And believe me, I'll always be here for you because, i loveeee youuuu
+        and I know that you loveeee me too.
+      </p>
+
+      <p>
+        So that's okay. It's not like we can always have free time for each
+        other. Sometimes you're busy, sometimes I'm busy. So that's it. I'll
+        never be upset or mad at you or think bad about it because of that.
+        Because I know that you wanna be with me. You just can't because you
+        don't have a personal phone yet because whenever you try to talk to me,
+        someone comes in, like your father or your mother. And that's okay
+        because I know you're dealing with that issue.
+      </p>
+
+      <p>
+        Because I know you miss me a lot. Because I know you miss me even more
+        than I miss you. Because I know that you love me more than anything
+        else. Because I know you wanna spend time with me more than anything
+        else. It's just that these issues are creating a resistance between us.
+        And i know this resistance will be gone soon.
+      </p>
+
+      <p>
+        We can and we will deal with it together, okay? Don't worry. We will
+        stay together. We will hold each other's hand and deal with it softly
+        and smoothly and we'll get through.
+      </p>
+
+      <p class="card__closing">
+        Alright? Don't worry about it, okay? Everything will be fine because
+        I'm with you, because you're with me, and because
+        <em>we are together.</em> 💕
+      </p>
+
+    </section>
+
+    <!-- ── POLAROID PHOTOS ── -->
+    <section class="polaroids fade-in delay-2" aria-label="Photo memories">
+      <h2 class="section-title">Our Moments 📸</h2>
+
+      <div class="polaroids__grid">
+
+        <!-- Each .polaroid wraps an image placeholder + caption -->
+        <!-- REPLACE src="placeholder.jpg" with your actual image paths -->
+
+        <div class="polaroid polaroid--1">
+          <div class="polaroid__img-wrap">
+            <img src="photo1.jpg" alt="Memory 1" onerror="this.src='https://placehold.co/260x220/fce4ec/e91e63?text=📷+Photo+1'" />
+          </div>
+          <p class="polaroid__caption">Us 🌸</p>
+        </div>
+
+        <div class="polaroid polaroid--2">
+          <div class="polaroid__img-wrap">
+            <img src="photo2.jpg" alt="Memory 2" onerror="this.src='https://placehold.co/260x220/fce4ec/e91e63?text=📷+Photo+2'" />
+          </div>
+          <p class="polaroid__caption">Always 💕</p>
+        </div>
+
+        <div class="polaroid polaroid--3">
+          <div class="polaroid__img-wrap">
+            <img src="photo3.jpg" alt="Memory 3" onerror="this.src='https://placehold.co/260x220/fce4ec/e91e63?text=📷+Photo+3'" />
+          </div>
+          <p class="polaroid__caption">Together 🌷</p>
+        </div>
+
+        <div class="polaroid polaroid--4">
+          <div class="polaroid__img-wrap">
+            <img src="photo4.jpg" alt="Memory 4" onerror="this.src='https://placehold.co/260x220/fce4ec/e91e63?text=📷+Photo+4'" />
+          </div>
+          <p class="polaroid__caption">Forever 🤍</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── MUSIC PLAYER ── -->
+    <!-- REPLACE "your-song.mp3" with your actual audio file path -->
+    <section class="player fade-in delay-3" aria-label="Music player">
+      <h2 class="section-title">Our Song 🎵</h2>
+
+      <div class="player__card">
+        <div class="player__note-icon">🎶</div>
+        <p class="player__song-name">Our Song</p>
+        <p class="player__song-sub">just for you, always</p>
+
+        <!-- Hidden native <audio> element — controlled by JS -->
+        <audio id="audio" src="your-song.mp3" preload="auto"></audio>
+
+        <!-- Progress bar -->
+        <div class="player__progress-wrap" id="progressWrap">
+          <div class="player__progress-bar" id="progressBar"></div>
+        </div>
+        <div class="player__time-row">
+          <span id="currentTime">0:00</span>
+          <span id="duration">0:00</span>
+        </div>
+
+        <!-- Controls -->
+        <div class="player__controls">
+          <button class="player__btn" id="playPauseBtn" aria-label="Play/Pause">
+            <span id="playIcon">▶</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer fade-in delay-4">
+      <p>made with 💗 just for you</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
